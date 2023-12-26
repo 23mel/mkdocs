@@ -1,0 +1,29 @@
+site_name: Wiki
+site_url: https://example.com/
+nav:
+  - Home: index.md
+  - Information about LiDAR: pre-read.md
+  - Timeline: timeline.md
+  - Relay: relay.md
+  - 'ROS': 
+    - Installation: ros.md
+    - Tutorials: ros-tutorials.md
+    - Tasks: ros-tasks.md
+  - 'GNSS, IMU & SBC':
+    - GNSS: gnss.md
+    - IMU: imu.md
+    - SBC: sbc.md
+  - All links/docs: resources.md
+theme: 
+  name: material
+  features:
+      - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
