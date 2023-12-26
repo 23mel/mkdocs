@@ -13,4 +13,18 @@ CAUS (Counter Unmanned Aircraft Systems) purpose is to prevent nefarious or unau
 - Accoustic
 - Optical
 
-Some CAUS technologies only use one type of sensor. Others can also opt to include a method of mitigation like jamming, takeover or kinetic mitigation.
+Some CAUS technologies only use one type of sensor. Others can also opt to include a method of mitigation.
+
+There are 4 methods to mitigate threats:
+- Jamming
+- Cyber-Takeover
+- Kinetic
+- High-Energy
+
+### Point Cloud Simulation
+A point cloud is a collection of data points plotted in a 3D environment.The LiDAR collects data and a software program takes that data to form a point cloud simulation.
+
+![image](assets/point_cloud.png)
+
+### ROI - Region of Interest
+Think of ROI as a specific portion of an image that is being focused on by the LiDAR. 
