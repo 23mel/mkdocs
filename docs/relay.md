@@ -8,7 +8,7 @@ SDK download link: <http://www.dingtian-tech.com/sdk/relay_sdk.zip>
 
 Before starting on the tasks below, download the SDK from the link above. This zipfile from the manufacterer provides all neccessary/related information to operate the relay board. 
 
-### Task
+### Tasks
 
 Try to complete most of the tasks given here. You can choose to use any programming language you want as long as it works.  
 
@@ -27,3 +27,6 @@ An example snippet using Python:
 ```py
 r = requests.get("http://192.168.7.1/relay_cgi.cgi?type=0&relay=0&on=1&time=0&pwd=0&")
 ```
+
+##### Note
+There is a chance that there may be a hardware issue if your code is working perfectly fine. (I encountered that and it drove me insane.) If you suspect so, download Thunder Client on Visual Studio Code. This will show if the outputs are working with your code.
