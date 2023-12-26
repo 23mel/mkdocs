@@ -305,11 +305,26 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#task" class="md-nav__link">
+  <a href="#tasks" class="md-nav__link">
     <span class="md-ellipsis">
-      Task
+      Tasks
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      Note
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -595,11 +610,26 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#task" class="md-nav__link">
+  <a href="#tasks" class="md-nav__link">
     <span class="md-ellipsis">
-      Task
+      Tasks
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      Note
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -631,7 +661,7 @@
 <p>Dingtian webpage link: <a href="https://www.dingtian-tech.com/en_us/relay4.html">https://www.dingtian-tech.com/en_us/relay4.html</a><br />
 SDK download link: <a href="http://www.dingtian-tech.com/sdk/relay_sdk.zip">http://www.dingtian-tech.com/sdk/relay_sdk.zip</a></p>
 <p>Before starting on the tasks below, download the SDK from the link above. This zipfile from the manufacterer provides all neccessary/related information to operate the relay board. </p>
-<h3 id="task">Task</h3>
+<h3 id="tasks">Tasks</h3>
 <p>Try to complete most of the tasks given here. You can choose to use any programming language you want as long as it works.  </p>
 <ol>
 <li>Able to enable and disable individual relays  </li>
@@ -650,6 +680,8 @@ SDK download link: <a href="http://www.dingtian-tech.com/sdk/relay_sdk.zip">http
 <p>An example snippet using Python:
 <div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://192.168.7.1/relay_cgi.cgi?type=0&amp;relay=0&amp;on=1&amp;time=0&amp;pwd=0&amp;&quot;</span><span class="p">)</span>
 </span></code></pre></div></p>
+<h5 id="note">Note</h5>
+<p>There is a chance that there may be a hardware issue if your code is working perfectly fine. (I encountered that and it drove me insane.) If you suspect so, download Thunder Client on Visual Studio Code. This will show if the outputs are working with your code.</p>
 
 
 
