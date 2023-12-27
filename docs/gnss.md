@@ -18,7 +18,8 @@ You can follow the hardware documentation link above as well as refer to the not
 
 > In any terminal opened, always source ~/catkin_ws/devel/setup.bash
 
-1) Next launch the program with roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p  1
+1) First, check if the laptop is able to detect the USB being inserted. Enter ls /dev/ttyUSB* in the terminal, insert the USB and enter the same command again. 
+1) Next, launch the program with roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p  1
 2) Open a new terminal and source  
 	- rostopic echo /ublox/fix: to observe and monitor the GPS fix data being published (longitude , latitude, etc)  
 	- rostopic echo /diagnostics: gives the information of the GPS status like accuracy amung others  
