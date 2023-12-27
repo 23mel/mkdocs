@@ -28,6 +28,9 @@
     
       <link rel="stylesheet" href="../assets/stylesheets/main.50c56a3b.min.css">
       
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
       
 
 
@@ -55,7 +58,12 @@
   </head>
   
   
-    <body dir="ltr">
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="light-green" data-md-color-accent="indigo">
   
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
@@ -107,8 +115,8 @@
       </div>
     </div>
     
+      
     
-      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
     
     
     
@@ -476,6 +484,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Setting up">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -596,6 +619,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Setting up">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#notes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Notes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -618,16 +656,36 @@
 <p>GNSS model:<br />
 - simpleRTK2B series receiver (Basic Starter Kit)<br />
 - Multi-band Active GNSS Antenna ANN-MB-00-00 (IP67)</p>
-<p>(Insert model img here later)</p>
+<p><img alt="image" src="../assets/basic-kit-upgraded.jpg" /></p>
 <p>Related links:<br />
-- Hardware documentation: <a href="https://www.ardusimple.com/how-to-use-ardusimple-rtk-receivers-and-get-gps-data-in-ros/">https://www.ardusimple.com/how-to-use-ardusimple-rtk-receivers-and-get-gps-data-in-ros/</a>
+- Hardware documentation: <a href="https://www.ardusimple.com/how-to-use-ardusimple-rtk-receivers-and-get-gps-data-in-ros/">https://www.ardusimple.com/how-to-use-ardusimple-rtk-receivers-and-get-gps-data-in-ros/</a><br />
 - ublox GPS driver: <a href="https://github.com/KumarRobotics/ublox">https://github.com/KumarRobotics/ublox</a></p>
 <h2 id="introduction">Introduction</h2>
 <p>(What GNSS stands for and how it works)</p>
 <h2 id="setting-up">Setting up</h2>
 <p>We will be using ROS to handle the GNSS. Take note that the GNSS will most likely be unable to connect to your computer as it runs on a different version of WSL. Hence, it would be recommended to configure/run the GNSS on the Aruvii laptop. </p>
-<p>(Step-by-step explanation)</p>
-<p>(Notes/Reminder add-on)</p>
+<p>You can follow the hardware documentation link above as well as refer to the notes that I have taken down. You will not need to follow every step of the link above as some steps have already been configured.</p>
+<p>In any terminal opened, always source ~/catkin_ws/devel/setup.bash</p>
+<p>1) In a terminal first source, then cd ~/catkin_ws/src/ublox/ublox_gps/launch
+2) Next launch the program with roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p
+3) Open a new terminal and source
+    - rostopic echo /ublox/fix: to observe and monitor the GPS fix data being published (longitude , latitude, etc)<br />
+    - rostopic echo /diagnostics: gives the information of the GPS status like accuracy amung others<br />
+4) To record GPS fix data being published on “/ublox/fix” Topic, enter rostopic echo /ublox/fix &gt; gps_fix_data.txt
+5) To record data about the GPS status “/diagnostics”, enter rostopic echo /diagnostics &gt; gps_diagnostics.txt
+6) To see the info recorded in the files, enter nano gps_fix_data.txt or nano gps_diagnostics.txt
+7) For example, the “sensor_msgs/NavSatFix” is a message type in ROS that is used to represent GPS fix data like the latitude, longitude, altitude, and other parameters related to the GPS position.  To see the structure of “sensor_msgs/NavSatFix” message,  enter, rosmsg show sensor_msgs/NavSatFix.
+8) For example, to obtain the current logger configuration of the u-blox Node, which can be helpful for debugging and monitoring purposes, enter rosservice info /ublox/get_loggers</p>
+<p>Simply put:
+1st terminal: roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p<br />
+    - launch program<br />
+2nd terminal: rostopic echo /ublox/fix<br />
+    - see the GPS data being published  </p>
+<h4 id="notes">Notes</h4>
+<ul>
+<li>If you want to follow the hardware documentation, under step 14, creating a COM11 port will not work. However, it should work if you use COM3 instead.  </li>
+<li>You should be testing the GNSS in an open-space environment, where the antenna has a direct view to the sky. You can go to a rooftop and try it out.</li>
+</ul>
 
 
 
