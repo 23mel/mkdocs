@@ -16,20 +16,19 @@ We will be using ROS to handle the GNSS. Take note that the GNSS will most likel
 
 You can follow the hardware documentation link above as well as refer to the notes that I have taken down. You will not need to follow every step of the link above as some steps have already been configured.
 
-> In any terminal opened, always source ~/catkin_ws/devel/setup.bash
+>:memo: In any terminal opened, always source ~/catkin_ws/devel/setup.bash
 
-1) In a terminal first source, then cd ~/catkin_ws/src/ublox/ublox_gps/launch  
-2) Next launch the program with roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p  
-3) Open a new terminal and source  
+1) Next launch the program with roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p  1
+2) Open a new terminal and source  
 	- rostopic echo /ublox/fix: to observe and monitor the GPS fix data being published (longitude , latitude, etc)  
 	- rostopic echo /diagnostics: gives the information of the GPS status like accuracy amung others  
-4) To record GPS fix data being published on “/ublox/fix” Topic, enter rostopic echo /ublox/fix > gps_fix_data.txt  
-5) To record data about the GPS status “/diagnostics”, enter rostopic echo /diagnostics > gps_diagnostics.txt  
-6) To see the info recorded in the files, enter nano gps_fix_data.txt or nano gps_diagnostics.txt  
-7) For example, the “sensor_msgs/NavSatFix” is a message type in ROS that is used to represent GPS fix data like the latitude, longitude, altitude, and other parameters related to the GPS position.  To see the structure of “sensor_msgs/NavSatFix” message,  enter, rosmsg show sensor_msgs/NavSatFix.  
-8) For example, to obtain the current logger configuration of the u-blox Node, which can be helpful for debugging and monitoring purposes, enter rosservice info /ublox/get_loggers  
+3) To record GPS fix data being published on “/ublox/fix” Topic, enter rostopic echo /ublox/fix > gps_fix_data.txt  
+4) To record data about the GPS status “/diagnostics”, enter rostopic echo /diagnostics > gps_diagnostics.txt  
+5) To see the info recorded in the files, enter nano gps_fix_data.txt or nano gps_diagnostics.txt  
+6) For example, the “sensor_msgs/NavSatFix” is a message type in ROS that is used to represent GPS fix data like the latitude, longitude, altitude, and other parameters related to the GPS position.  To see the structure of “sensor_msgs/NavSatFix” message,  enter, rosmsg show sensor_msgs/NavSatFix.  
+7) For example, to obtain the current logger configuration of the u-blox Node, which can be helpful for debugging and monitoring purposes, enter rosservice info /ublox/get_loggers  
 
-Summary:  
+**Summary:**  
 1st terminal: roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p  
 	- launch program  
 2nd terminal: rostopic echo /ublox/fix  
