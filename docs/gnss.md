@@ -18,22 +18,26 @@ You can follow the hardware documentation link above as well as refer to the not
 
 > In any terminal opened, always source ~/catkin_ws/devel/setup.bash
 
-1) In a terminal first source, then cd ~/catkin_ws/src/ublox/ublox_gps/launch
-2) Next launch the program with roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p
-3) Open a new terminal and source
+1) In a terminal first source, then cd ~/catkin_ws/src/ublox/ublox_gps/launch  
+2) Next launch the program with roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p  
+3) Open a new terminal and source  
 	- rostopic echo /ublox/fix: to observe and monitor the GPS fix data being published (longitude , latitude, etc)  
 	- rostopic echo /diagnostics: gives the information of the GPS status like accuracy amung others  
-4) To record GPS fix data being published on “/ublox/fix” Topic, enter rostopic echo /ublox/fix > gps_fix_data.txt
-5) To record data about the GPS status “/diagnostics”, enter rostopic echo /diagnostics > gps_diagnostics.txt
-6) To see the info recorded in the files, enter nano gps_fix_data.txt or nano gps_diagnostics.txt
-7) For example, the “sensor_msgs/NavSatFix” is a message type in ROS that is used to represent GPS fix data like the latitude, longitude, altitude, and other parameters related to the GPS position.  To see the structure of “sensor_msgs/NavSatFix” message,  enter, rosmsg show sensor_msgs/NavSatFix.
-8) For example, to obtain the current logger configuration of the u-blox Node, which can be helpful for debugging and monitoring purposes, enter rosservice info /ublox/get_loggers
+4) To record GPS fix data being published on “/ublox/fix” Topic, enter rostopic echo /ublox/fix > gps_fix_data.txt  
+5) To record data about the GPS status “/diagnostics”, enter rostopic echo /diagnostics > gps_diagnostics.txt  
+6) To see the info recorded in the files, enter nano gps_fix_data.txt or nano gps_diagnostics.txt  
+7) For example, the “sensor_msgs/NavSatFix” is a message type in ROS that is used to represent GPS fix data like the latitude, longitude, altitude, and other parameters related to the GPS position.  To see the structure of “sensor_msgs/NavSatFix” message,  enter, rosmsg show sensor_msgs/NavSatFix.  
+8) For example, to obtain the current logger configuration of the u-blox Node, which can be helpful for debugging and monitoring purposes, enter rosservice info /ublox/get_loggers  
 
-Summary:
+Summary:  
 1st terminal: roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p  
 	- launch program  
 2nd terminal: rostopic echo /ublox/fix  
 	- see the GPS data being published  
+
+Another way to test the GNSS is to use the u-center software that should already be installed in the Aruvii laptop. You will be able to see the latitude and longtitude, which should correspond to your current location.
+
+![image](assets/gnss_test.jpg)
 
 #### Notes
 - If you want to follow the hardware documentation, under step 14, creating a COM11 port will not work. However, it should work if you use COM3 instead.  
