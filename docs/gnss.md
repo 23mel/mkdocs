@@ -9,14 +9,14 @@ Related links:
 - ublox GPS driver: <https://github.com/KumarRobotics/ublox>
 
 ## Introduction
-(What GNSS stands for and how it works)
+The GNSS will be used to get a LiDAR's exact location. This will be useful for running a simulation as well as identify where a particular LiDAR is in a bigger system. 
 
 ## Setting up
 We will be using ROS to handle the GNSS. Take note that the GNSS will most likely be unable to connect to your computer as it runs on a different version of WSL. Hence, it would be recommended to configure/run the GNSS on the Aruvii laptop. 
 
 You can follow the hardware documentation link above as well as refer to the notes that I have taken down. You will not need to follow every step of the link above as some steps have already been configured.
 
->:memo: In any terminal opened, always source ~/catkin_ws/devel/setup.bash
+> In any terminal opened, always source ~/catkin_ws/devel/setup.bash
 
 1) Next launch the program with roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p  1
 2) Open a new terminal and source  
@@ -41,3 +41,7 @@ Another way to test the GNSS is to use the u-center software that should already
 #### Notes
 - If you want to follow the hardware documentation, under step 14, creating a COM11 port will not work. However, it should work if you use COM3 instead.  
 - You should be testing the GNSS in an open-space environment, where the antenna has a direct view to the sky. You can go to a rooftop and try it out.
+
+## Tasks
+- Start & receive data with the GNSS on the laptop
+- Publish GPS data to ROS as a ROS message (sensor_msgs/NavSatFix or otherwise)
