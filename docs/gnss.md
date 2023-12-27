@@ -16,7 +16,7 @@ We will be using ROS to handle the GNSS. Take note that the GNSS will most likel
 
 You can follow the hardware documentation link above as well as refer to the notes that I have taken down. You will not need to follow every step of the link above as some steps have already been configured.
 
-In any terminal opened, always source ~/catkin_ws/devel/setup.bash
+> In any terminal opened, always source ~/catkin_ws/devel/setup.bash
 
 1) In a terminal first source, then cd ~/catkin_ws/src/ublox/ublox_gps/launch
 2) Next launch the program with roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p
@@ -29,7 +29,7 @@ In any terminal opened, always source ~/catkin_ws/devel/setup.bash
 7) For example, the “sensor_msgs/NavSatFix” is a message type in ROS that is used to represent GPS fix data like the latitude, longitude, altitude, and other parameters related to the GPS position.  To see the structure of “sensor_msgs/NavSatFix” message,  enter, rosmsg show sensor_msgs/NavSatFix.
 8) For example, to obtain the current logger configuration of the u-blox Node, which can be helpful for debugging and monitoring purposes, enter rosservice info /ublox/get_loggers
 
-Simply put:
+Summary:
 1st terminal: roslaunch ublox_gps ublox_device.launch param_file_name:=zed_f9p  
 	- launch program  
 2nd terminal: rostopic echo /ublox/fix  

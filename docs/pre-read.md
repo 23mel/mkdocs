@@ -21,6 +21,8 @@ There are 4 methods to mitigate threats:
 - Kinetic
 - High-Energy
 
+___
+
 ### Point Cloud Simulation
 A point cloud is a collection of data points plotted in a 3D environment.The LiDAR collects data and a software program takes that data to form a point cloud simulation.
 
