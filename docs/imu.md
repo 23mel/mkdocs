@@ -1,10 +1,10 @@
-IMU model:
+IMU model:  
 - HFI-A9 Handsfree ROS IMU
 
 ![image](assets/imu_a9.jpg)
 - 
-Related links:
-- Original hardware documentation/Drivers: <https://gitee.com/HANDS-FREE/handsfree_ros_imu/>
+Related links:  
+- Original hardware documentation/Drivers: <https://gitee.com/HANDS-FREE/handsfree_ros_imu/>  
 - English translation/Tutorial: <https://docs.taobotics.com/docs/hfi-imu/hfi-imu-en/03_Basic_Tutorial/03_ROS_driver_and_visualization/doc.html>
 
 ## Introduction
