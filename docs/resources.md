@@ -12,5 +12,5 @@ Roslaunch: <http://wiki.ros.org/roslaunch>
 GNSS Hardware documentation: <https://www.ardusimple.com/how-to-use-ardusimple-rtk-receivers-and-get-gps-data-in-ros/>  
 ublox GPS driver: <https://github.com/KumarRobotics/ublox>  
 IMU hardware documentation/Drivers: <https://gitee.com/HANDS-FREE/handsfree_ros_imu/>  
-IMUT (English translation) documentation/Tutorial: <https://docs.taobotics.com/docs/hfi-imu/hfi-imu-en/03_Basic_Tutorial/03_ROS_driver_and_visualization/doc.html>  
-(sbc and onwards links)
+IMU (English translation) documentation/Tutorial: <https://docs.taobotics.com/docs/hfi-imu/hfi-imu-en/03_Basic_Tutorial/03_ROS_driver_and_visualization/doc.html>  
+(sbc & onwards links)
