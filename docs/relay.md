@@ -30,5 +30,5 @@ An example snippet using Python:
 r = requests.get("http://192.168.7.1/relay_cgi.cgi?type=0&relay=0&on=1&time=0&pwd=0&")
 ```
 
-##### Note
+#### Note
 There is a chance that there may be a hardware issue if your code is working perfectly fine. If you suspect so, download the Thunder Client extension on Visual Studio Code. This will show if the outputs are working with your code.
