@@ -526,6 +526,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Setting up">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -604,6 +619,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Setting up">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Code
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -625,14 +655,19 @@
 
 <h2 id="sbc">SBC</h2>
 <p>Model used: Raspberry Pi 4 (RPI4) Model B
-(insert rpi4 model img here)</p>
-<p>Related links:</p>
+<img alt="image" src="../assets/rpi4_modelB.png" /></p>
+<p>Related links:
+- Hardware documentation: <a href="https://www.raspberrypi.com/documentation/computers/getting-started.html">https://www.raspberrypi.com/documentation/computers/getting-started.html</a></p>
 <h2 id="setting-up">Setting up</h2>
 <ul>
 <li>Follow the default setup procedure for the RPI4 - connect it to an external monitor, mouse and keyboard. </li>
-<li>The SD card should already be flashed with an OS. (Ubuntu 20.04 Desktop) </li>
-<li>Code will need to be written to handle the IMU serial data. (You can mostly use the source code provided by the manufacturer.)</li>
+<li>The SD card should already be flashed with an OS. (Ubuntu 20.04 Desktop) If not, use Imager to install the OS in the SD card.</li>
+<li>Code will need to be written to handle the IMU serial data. You can try writing the code using the souruce code from the IMU documentation. </li>
 </ul>
+<hr />
+<h4 id="code">Code</h4>
+<p><img alt="code_1" src="../assets/receiver.txt" />
+<img alt="code_2" src="../assets/sender.txt" /></p>
 
 
 
