@@ -13,5 +13,5 @@ Related links:
 ___
 
 #### Code
-[receiver](assets/receiver.txt){:download="receiver code"}  
-[sender](assets/sender.txt){:download="sender code"}  
+[Receiver](assets/receiver.txt){:download="receiver code"}  
+[Sender](assets/sender.txt){:download="sender code"}  

@@ -8,9 +8,11 @@ Try these after going through [ROS tutorials](ros-tutorials.md).
 - Messages should be visible via `rostopic echo`
 - Be able to record via `rosbag` the messages being sent and received
 
-2) Further Features
+2) Further Features (Optional)
 - Configurable topic names via Parameter server
 - Config file as `.yaml` file
 - Add a bot node that sends a message every X seconds
 - Use a `.launch` file to start multiple nodes at once
+
+Even though implementing parameter and launch file are optional, you should at least have an understanding on how those concepts work.
 

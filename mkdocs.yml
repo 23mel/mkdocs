@@ -13,6 +13,7 @@ nav:
     - GNSS: gnss.md
     - IMU: imu.md
     - SBC: sbc.md
+  - LiDAR Setup & Handling: ritz.md
   - All links/docs: resources.md
 theme: 
   name: material
