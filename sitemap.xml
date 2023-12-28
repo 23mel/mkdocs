@@ -2,57 +2,57 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://example.com/</loc>
-         <lastmod>2023-12-27</lastmod>
+         <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/gnss/</loc>
-         <lastmod>2023-12-27</lastmod>
+         <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/imu/</loc>
-         <lastmod>2023-12-27</lastmod>
+         <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/pre-read/</loc>
-         <lastmod>2023-12-27</lastmod>
+         <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/relay/</loc>
-         <lastmod>2023-12-27</lastmod>
+         <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/resources/</loc>
-         <lastmod>2023-12-27</lastmod>
+         <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/ros-tasks/</loc>
-         <lastmod>2023-12-27</lastmod>
+         <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/ros-tutorials/</loc>
-         <lastmod>2023-12-27</lastmod>
+         <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/ros/</loc>
-         <lastmod>2023-12-27</lastmod>
+         <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/sbc/</loc>
-         <lastmod>2023-12-27</lastmod>
+         <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://example.com/timeline/</loc>
-         <lastmod>2023-12-27</lastmod>
+         <lastmod>2023-12-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
