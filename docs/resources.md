@@ -13,4 +13,4 @@ GNSS Hardware documentation: <https://www.ardusimple.com/how-to-use-ardusimple-r
 ublox GPS driver: <https://github.com/KumarRobotics/ublox>  
 IMU hardware documentation/Drivers: <https://gitee.com/HANDS-FREE/handsfree_ros_imu/>  
 IMU (English translation) documentation/Tutorial: <https://docs.taobotics.com/docs/hfi-imu/hfi-imu-en/03_Basic_Tutorial/03_ROS_driver_and_visualization/doc.html>  
-(sbc & onwards links)
+Raspberry Pi documentation: <https://www.raspberrypi.com/documentation/computers/getting-started.html>  
