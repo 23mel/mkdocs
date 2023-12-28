@@ -2,7 +2,7 @@
 Model used: Raspberry Pi 4 (RPI4) Model B
 ![image](assets/rpi4_modelB.png)
 
-Related links:
+Related links:  
 - Hardware documentation: <https://www.raspberrypi.com/documentation/computers/getting-started.html>
 
 ## Setting up
@@ -13,5 +13,5 @@ Related links:
 ___
 
 #### Code
-![code_1](assets/receiver.txt)
-![code_2](assets/sender.txt)
+[code_1](assets/receiver.txt)  
+[code_2](assets/sender.txt)
