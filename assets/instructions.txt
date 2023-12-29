@@ -1,0 +1,8 @@
+1. roslaunch innovusion_pointcloud innovusion_points.launch
+
+2. 
+source devel/setup.bash
+roslaunch geolocation live.launch
+
+3. rosrun rqt_reconfigure rqt_reconfigure
+
