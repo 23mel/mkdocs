@@ -410,6 +410,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      Note
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -606,6 +621,21 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Tasks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#note" class="md-nav__link">
+    <span class="md-ellipsis">
+      Note
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -639,6 +669,20 @@
 - Add a bot node that sends a message every X seconds
 - Use a <code>.launch</code> file to start multiple nodes at once</p>
 <p>Even though implementing parameter and launch file are optional, you should at least have an understanding on how those concepts work.</p>
+<hr />
+<h4 id="note">Note</h4>
+<p>If you run into this particular error: /usr/bin/env: ‘python3\r’: No such file or directory<br />
+You can try installing dos2unix, before converting your scripts. You can do with something like this:<br />
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>dos2unix
+</span></code></pre></div></p>
+<p>Once installed, you can convert your script accordingly:<br />
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>dos2unix<span class="w"> </span>&lt;file_name&gt;.py
+</span></code></pre></div></p>
+<p>Separately, do try to run your script locally and see if it's working, you will also need to take note to include the shebang line in your script.<br />
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="ch">#!/usr/bin/env python3</span>
+</span></code></pre></div>
+Note that above is for <code>python3</code>, use <code>python</code> if necessary.</p>
+<p>Reference link: https://askubuntu.com/questions/896860/usr-bin-env-python3-r-no-such-file-or-directory</p>
 
 
 

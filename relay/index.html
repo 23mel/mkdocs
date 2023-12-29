@@ -710,7 +710,16 @@ SDK download link: <a href="http://www.dingtian-tech.com/sdk/relay_sdk.zip">http
 <div class="language-py highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">r</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&quot;http://192.168.7.1/relay_cgi.cgi?type=0&amp;relay=0&amp;on=1&amp;time=0&amp;pwd=0&amp;&quot;</span><span class="p">)</span>
 </span></code></pre></div></p>
 <h4 id="note">Note</h4>
-<p>There is a chance that there may be a hardware issue if your code is working perfectly fine. If you suspect so, download the Thunder Client extension on Visual Studio Code. This will show if the outputs are working with your code.</p>
+<p>192.168.7.1 -&gt; WIFI<br />
+192.168.1.100 -&gt; ETH  </p>
+<ul>
+<li>
+<p>The output will look something like "&amp;0&amp;0&amp;0&amp;1&amp;0&amp;" if it is successful.</p>
+</li>
+<li>
+<p>There is a chance that there may be a hardware issue if your code is working perfectly fine. (Relays not turning on) If you suspect so, either swap your relay board or download the Thunder Client extension on Visual Studio Code. This will show if the outputs are working with your code.</p>
+</li>
+</ul>
 
 
 
