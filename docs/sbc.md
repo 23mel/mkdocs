@@ -14,5 +14,5 @@ ___
 
 #### Code 
 Click to download .txt files  
-![Receiver](assets/receiver.txt){:download="receiver code"}  
-![Sender](assets/sender.txt){:download="sender code"}  
+[Receiver](assets/receiver.txt){:download="receiver code"}  
+[Sender](assets/sender.txt){:download="sender code"}  
