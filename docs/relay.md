@@ -31,4 +31,9 @@ r = requests.get("http://192.168.7.1/relay_cgi.cgi?type=0&relay=0&on=1&time=0&pw
 ```
 
 #### Note
-There is a chance that there may be a hardware issue if your code is working perfectly fine. If you suspect so, download the Thunder Client extension on Visual Studio Code. This will show if the outputs are working with your code.
+192.168.7.1 -> WIFI  
+192.168.1.100 -> ETH  
+
+- The output will look something like "&0&0&0&1&0&" if it is successful.
+
+- There is a chance that there may be a hardware issue if your code is working perfectly fine. (Relays not turning on) If you suspect so, either swap your relay board or download the Thunder Client extension on Visual Studio Code. This will show if the outputs are working with your code.
