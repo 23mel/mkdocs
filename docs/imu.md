@@ -11,9 +11,9 @@ Related links:
 (How imu works and why its purpose here)
 
 ## Setting up
-Just like the GNSS, it would be recommended to set up the IMU with the Aruvii laptop.
+Just like the GNSS, it would be recommended to set up the IMU with the Aruvii laptop as it might not be able to get detected on your computer. 
 
-Referring to the tutorial link above, it should be enough to get the IMU up and running.
+Refer to the tutorial link above, it should be enough to get the IMU up and running.
 
 > Check if the laptop is able to detect the USB being inserted. Enter ls /dev/ttyUSB* in the terminal, insert the USB and enter the same command again. 
 
@@ -21,3 +21,4 @@ Referring to the tutorial link above, it should be enough to get the IMU up and 
 - Start & receive data with IMU on the laptop
 - Publish IMU Data to ROS as a ROS message (sensor_msgs/Imu or otherwise)
 - Calculate heading/RPY from Magnetometer readings
+

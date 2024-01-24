@@ -14,7 +14,7 @@ nav:
     - IMU: imu.md
     - SBC: sbc.md
   - 'LiDAR Setup & Handling': 
-    - Operating the LiAR: ritv.md
+    - Operating the LiAR: ritz.md
     - TLDR: tldr.md
   - All links/docs: resources.md
 theme: 
