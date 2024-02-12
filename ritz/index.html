@@ -11,6 +11,10 @@
         <link rel="canonical" href="https://example.com/ritz/">
       
       
+        <link rel="prev" href="../sbc/">
+      
+      
+        <link rel="next" href="../tldr/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -18,7 +22,7 @@
     
     
       
-        <title>Ritz - Wiki</title>
+        <title>Operating the LiAR - Wiki</title>
       
     
     
@@ -104,7 +108,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Ritz
+              Operating the LiAR
             
           </span>
         </div>
@@ -488,19 +492,21 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
         
           
           <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
@@ -514,7 +520,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
             LiDAR Setup & Handling
@@ -525,10 +531,28 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ritv/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Operating the LiAR
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -537,6 +561,81 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#software" class="md-nav__link">
+    <span class="md-ellipsis">
+      Software
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Software">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      Setup
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metaview" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metaview
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ritz" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ritz
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ritz">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#download" class="md-nav__link">
+    <span class="md-ellipsis">
+      Download
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -643,13 +742,13 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#ritv" class="md-nav__link">
+  <a href="#ritz" class="md-nav__link">
     <span class="md-ellipsis">
-      Ritv
+      Ritz
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Ritv">
+    <nav class="md-nav" aria-label="Ritz">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -686,7 +785,7 @@
                   
 
 
-  <h1>Ritz</h1>
+  <h1>Operating the LiAR</h1>
 
 <h2 id="software">Software</h2>
 <p>This page will be touching on how to setup the lidar as well as the programs used to operate the lidar. (Metaview &amp; Ritz)</p>
@@ -694,10 +793,10 @@
 <ul>
 <li>Take note that everytime you connect the lidar to the Aruvii laptop, you will have to switch the connection settings to LiDAR as the default selection is relay. The lidar will not show any output if not done so.</li>
 </ul>
-<p>When connecting the wires, check the connectors of the wires as they are both different. At the end, you should see the arrows on the wire on the right and top respectively.
+<p>When connecting the wires, check the connectors of the wires as they are both different. At the end, you should see the arrows on the wire on the right and top respectively.<br />
 <img alt="image" src="../assets/lidar_wire%281%29.jpg" />
 <img alt="image" src="../assets/lidar_wire%282%29.jpg" /></p>
-<p>Lastly there should be one more connection to make.
+<p>Lastly there should be one more connection to make.<br />
 <img alt="image" src="../assets/lidar_wire%283%29.jpg" /></p>
 <p>Before running anything, <strong>always</strong> make sure to adjust the 'Wired Connections' settings on the Aruvii laptop as there will be no output if not done so. It will not switch to LiDAR by default, so you will have to change it everytime.
 <img alt="screenshot" src="../assets/wired_connection.png" /></p>
@@ -709,9 +808,9 @@
 <p>Click on 'Functions' in the bottom right &gt; 'LiDAR'. Drag the small circle in the box to move the ROI centroid. 
 <img alt="screenshot" src="../assets/lidar_function.png" /></p>
 <hr />
-<h3 id="ritv">Ritv</h3>
-<p>Ritv is a 3d simulation that produces the LiDAR output over your current location. With Ritv, you can see the detection and tracking of drones, as well as configure lidar parameters to refine the detection output (known as rqt_reconfigure).</p>
-<p>To launch Ritv, first navigate to the 'aruvii_ws' folder on the desktop and open a terminal from there. There should be a 'instructions.txt' file with the commands you need to run in there. (If not, you can download the file at the bottom of the page)
+<h3 id="ritz">Ritz</h3>
+<p>Ritz is a 3d simulation that produces the LiDAR output over your current location. With Ritv, you can see the detection and tracking of drones, as well as configure lidar parameters to refine the detection output (known as rqt_reconfigure).</p>
+<p>To launch Ritv, first navigate to the 'aruvii_ws' folder on the desktop and open a terminal from there. There should be a 'instructions.txt' file with the commands you need to run in there. (If not, you can download the file at the bottom of the page) 
 <div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>roslaunch innovusion_pointcloud innovusion_points.launch
 </span></code></pre></div></p>
 <p>Launch a second terminal in aruvii_ws and run these commands. This should start Ritv.
